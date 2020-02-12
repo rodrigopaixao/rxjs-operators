@@ -1,6 +1,7 @@
 # RXJS Operators
 
-```import { of, interval, from, timer } from 'rxjs'; 
+```
+import { of, interval, from, timer } from 'rxjs'; 
 import { map, mergeMap, switchMap } from 'rxjs/operators';
 
 // map operator example
@@ -38,4 +39,5 @@ const result = letters.pipe(
   mergeMap(x => from([1,2,3]).pipe(map(i => x+i))),
 );
 
-result.subscribe(x => console.log(x));```
+result.subscribe(x => console.log(x));
+```
